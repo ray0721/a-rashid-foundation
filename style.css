@@ -98,17 +98,20 @@ body {
 }
 
 .btn-secondary {
-  border: 2px solid #1e88e5; /* Blue */
-  color: #1e88e5;
+  background-color: #e3f2fd;      /* Soft blue background */
+  color: #1565c0;                 /* Strong blue text */
+  border: 2px solid #1565c0;
   padding: 12px 22px;
-  border-radius: 4px;
+  border-radius: 6px;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .btn-secondary:hover {
-  background-color: #1e88e5;
+  background-color: #1565c0;
   color: #ffffff;
 }
+
 
 /* Impact */
 .impact {
@@ -219,6 +222,7 @@ body {
 .hero-image p {
   color: #ffffff;
 }
+
 
 
 
