@@ -21,9 +21,16 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  background: #ffffff;
-  border-bottom: 1px solid #eee;
   z-index: 1000;
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.92)
+    ),
+    url("assets/images/hero.jpg") center/cover no-repeat;
+
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .nav-content {
@@ -205,5 +212,6 @@ body {
 .hero-image p {
   color: #ffffff;
 }
+
 
 
