@@ -223,6 +223,23 @@ body {
   color: #ffffff;
 }
 
+/* Donate section spacing fix */
+.donate {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.donate p {
+  margin-bottom: 30px;   /* Creates space above button */
+  line-height: 1.7;
+}
+
+.donate .btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
 
 
 
