@@ -239,6 +239,33 @@ body {
   margin-top: 10px;
 }
 
+/* FORCE FIX donate section overlap */
+.donate {
+  position: relative;
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.donate-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donate h2 {
+  margin-bottom: 20px;
+}
+
+.donate p {
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.donate .btn-primary {
+  display: inline-block;
+  position: relative;
+}
+
 
 
 
