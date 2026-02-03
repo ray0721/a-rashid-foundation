@@ -43,6 +43,8 @@ body {
 .logo {
   color: #c62828;
   font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.3px;
 }
 
 .nav-links {
@@ -212,6 +214,7 @@ body {
 .hero-image p {
   color: #ffffff;
 }
+
 
 
 
