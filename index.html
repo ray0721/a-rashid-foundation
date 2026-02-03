@@ -12,20 +12,39 @@
 
   <!-- Navigation -->
   <header class="navbar">
-    <div class="container nav-content">
-      <h1 class="logo">A. Rashid Foundation</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#volunteer">Volunteer</a></li>
-          <li><a href="#donate" class="btn-outline">Donate</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="container nav-content">
+
+    <h1 class="logo">A. Rashid Foundation</h1>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#donate" class="btn-outline">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Search + Language -->
+    <div class="nav-tools">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search"
+        aria-label="Search site"
+      />
+      <button onclick="searchSite()">🔍</button>
+
+      <select id="languageSelect" onchange="switchLanguage()">
+        <option value="en">English</option>
+        <option value="bn">বাংলা</option>
+      </select>
     </div>
-  </header>
+
+  </div>
+</header>
 
   <section class="impact">
   <div class="container impact-grid">
@@ -309,6 +328,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
