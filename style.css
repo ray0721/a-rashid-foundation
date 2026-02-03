@@ -359,6 +359,52 @@ body {
   font-size: 1rem;
 }
 
+/* Transparency section */
+.transparency {
+  background: #f9fafb;
+  padding: 80px 20px;
+}
+
+.transparency-intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 50px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.transparency-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.transparency-item {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.transparency-item h4 {
+  color: #c62828;
+  margin-bottom: 10px;
+}
+
+.transparency-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .transparency-points {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 
