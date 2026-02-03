@@ -193,3 +193,17 @@ body {
     font-size: 2rem;
   }
 }
+
+.hero-image {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("assets/images/hero.jpg") center/cover no-repeat;
+  color: white;
+}
+
+.hero-image p {
+  color: #f1f1f1;
+}
+
