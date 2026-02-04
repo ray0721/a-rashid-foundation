@@ -496,35 +496,6 @@ body {
   border-radius: 6px;
 }
 
-@media (max-width: 768px) {
-  .nav-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .nav-links li a {
-    padding: 10px 0;
-    display: block;
-  }
-
-  .nav-tools {
-    width: 100%;
-    display: flex;
-    gap: 8px;
-  }
-
-  #searchInput {
-    width: 100%;
-  }
-}
-
 /* ===============================
    MOBILE NAVBAR
 ================================ */
@@ -570,6 +541,7 @@ body {
     width: auto;
   }
 }
+
 
 
 
