@@ -190,33 +190,26 @@
   </div>
 </section>
 
-  <section class="donate">
-  <div class="donate-content">
-    <h2>Support Our Mission</h2>
-    <p>
-      Your contribution helps us provide aid, relief, and community support.
-    </p>
-   <a href="#donate" class="btn-primary">Donate Now</a>
-  </div>
-</section>
-
   <section id="donate" class="donate">
   <div class="container">
-    <h2 class="section-title">Donate via bKash</h2>
+    <h2 class="section-title" data-key="donateTitle">Donate via bKash</h2>
 
-    <p class="donate-intro">
+    <p class="donate-intro" data-key="donateIntro">
       Mobile banking is the easiest way to support our mission in Bangladesh.
-      You can donate securely using <strong>bKash</strong>.
+      Please follow the steps below to donate using bKash.
     </p>
 
     <div class="bkash-box">
-      <p><strong>bKash Number:</strong> +88 01317-555221</p>
-      <p><strong>Account Type:</strong> Personal</p remembering them.
+      <div class="bkash-info">
+        <p><strong>bKash Number:</strong> <span id="bkashNumber">01XXXXXXXXX</span></p>
+        <p><strong>Account Type:</strong> Personal</p>
+      </div>
 
-      <p class="bkash-note">
-        After sending money via bKash, please fill out the form below so we can
-        properly record and acknowledge your donation.
-      </p>
+      <ol class="donate-steps">
+        <li>Send money to the bKash number above</li>
+        <li>Fill out the donation form below</li>
+        <li>We will confirm your donation</li>
+      </ol>
 
       <form class="donate-form">
         <input type="text" placeholder="Your Full Name" required />
@@ -224,7 +217,7 @@
         <input type="number" placeholder="Donation Amount (BDT)" required />
 
         <textarea
-          placeholder="Donation purpose / note (e.g. food aid, emergency help, general donation)"
+          placeholder="Donation purpose / note (e.g. food aid, emergency help)"
           rows="4"
           required
         ></textarea>
@@ -331,6 +324,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
