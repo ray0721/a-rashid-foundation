@@ -788,12 +788,13 @@ body {
     margin-left: auto;
   }
 
-/* Mobile */
 @media (max-width: 768px) {
-  #mobileMenu {
-    display: none;
+  .nav-links {
     flex-direction: column;
+    gap: 12px;
+    padding-left: 16px;   /* 👈 moves menu slightly right */
   }
+}
 
   #mobileMenu.active {
     display: block;
@@ -832,6 +833,7 @@ body {
 .logo img {
   filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
 }
+
 
 
 
