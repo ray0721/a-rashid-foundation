@@ -65,25 +65,38 @@ body {
   font-weight: 600;
 }
 
-/* Hero */
 .hero {
-  background: #f9f9f9;
-  padding: 90px 0;
+  background: url("assets/images/hero.jpg") center/cover no-repeat;
+  min-height: 80vh;
+  position: relative;
+  color: #fff;
 }
 
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
 }
 
 .hero p {
-  color: #555;
-  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 24px;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
 
 .btn-primary {
@@ -541,6 +554,41 @@ body {
     width: auto;
   }
 }
+
+/* ===============================
+   HERO – MOBILE
+================================ */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
 
 
 
