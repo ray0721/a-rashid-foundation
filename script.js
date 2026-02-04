@@ -51,3 +51,7 @@ function switchLanguage() {
   document.getElementById("searchInput").placeholder =
     translations[lang].searchPlaceholder;
 }
+
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
