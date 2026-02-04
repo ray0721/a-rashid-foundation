@@ -702,6 +702,50 @@ body {
   }
 }
 
+/* ===============================
+   MOBILE NAVBAR FIX
+================================ */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #mobileMenu {
+    display: none;
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  #mobileMenu.active {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-tools {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+  }
+}
+
 
 
 
