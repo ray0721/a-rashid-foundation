@@ -40,10 +40,27 @@ body {
 }
 
 .logo {
-  color: #c62828;
-  font-weight: 700;
-  font-size: 1.6rem;
-  letter-spacing: 0.3px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #c62828; /* Strong charity red */
+  letter-spacing: 0.5px;
+  position: relative;
+  .logo:hover {
+  transform: translateY(-1px);
+  text-shadow:
+    2px 2px 0 #b71c1c,
+    3px 3px 0 #a31515,
+    5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+  /* Subtle 3D depth */
+  text-shadow:
+    1px 1px 0 #b71c1c,
+    2px 2px 0 #a31515,
+    3px 3px 6px rgba(0, 0, 0, 0.15);
+
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
 }
 
 .nav-links {
@@ -780,6 +797,15 @@ body {
 
   .nav-tools {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.6rem;
+    text-shadow:
+      1px 1px 0 #b71c1c,
+      2px 2px 4px rgba(0, 0, 0, 0.15);
   }
 }
 
