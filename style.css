@@ -23,13 +23,23 @@ body {
   top: 0;
   z-index: 1000;
 
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url("assets/images/hero.jpg") center/cover no-repeat;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding: 14px 0;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  /* Smooth transition for scroll effect */
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Red accent line */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #c62828, #e53935);
 }
 
 .nav-content {
@@ -808,6 +818,7 @@ body {
       2px 2px 4px rgba(0, 0, 0, 0.15);
   }
 }
+
 
 
 
