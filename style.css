@@ -50,23 +50,20 @@ body {
 }
 
 .logo {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #c62828; /* Strong charity red */
-  letter-spacing: 0.5px;
-  text-shadow:
-    2px 2px 0 #b71c1c,
-    3px 3px 0 #a31515,
-    5px 5px 10px rgba(0, 0, 0, 0.2);
-}
+  display: flex;
+  align-items: center;
+  gap: 12px;
 
-  /* Subtle 3D depth */
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #c62828;
+
+  /* Subtle desktop depth */
   text-shadow:
     1px 1px 0 #b71c1c,
-    2px 2px 0 #a31515,
-    3px 3px 6px rgba(0, 0, 0, 0.15);
+    2px 2px 4px rgba(0, 0, 0, 0.15);
 
-  transition: transform 0.2s ease, text-shadow 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .nav-links {
@@ -833,6 +830,7 @@ body {
 .logo img {
   filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
 }
+
 
 
 
