@@ -745,6 +745,46 @@ body {
     gap: 8px;
   }
 }
+/* NAV TOOLS */
+.nav-tools {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  #mobileMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-tools {
+    margin-left: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #mobileMenu {
+    display: none;
+    flex-direction: column;
+  }
+
+  #mobileMenu.active {
+    display: block;
+  }
+
+  .nav-tools {
+    flex-direction: column;
+  }
+}
+
 
 
 
