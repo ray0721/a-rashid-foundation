@@ -154,17 +154,39 @@ body {
   font-size: 2rem;
 }
 
-.program-grid {
+.programs {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.programs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .program-card {
-  background: #ffffff;
-  padding: 25px;
+  background: #f9f9f9;
   border-radius: 6px;
-  border: 1px solid #eee;
+  padding: 20px;
+}
+
+.program-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.program-card h3 {
+  margin-bottom: 10px;
+  color: #c62828;
+}
+
+.program-card p {
+  color: #555;
+  line-height: 1.6;
 }
 
 /* Volunteer */
@@ -586,6 +608,32 @@ body {
     text-align: center;
     padding: 14px;
     font-size: 16px;
+  }
+}
+
+/* ===============================
+   PROGRAMS – MOBILE
+================================ */
+@media (max-width: 768px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .program-card {
+    padding: 16px;
+  }
+
+  .program-card img {
+    height: 180px;
+  }
+
+  .program-card h3 {
+    font-size: 18px;
+  }
+
+  .program-card p {
+    font-size: 15px;
   }
 }
 
